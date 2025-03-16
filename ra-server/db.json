@@ -56,7 +56,7 @@
   "posters": [
     {
       "id": 1,
-      "category_id": 2,
+      "category_id": 1,
       "title": "Dog in the Grass",
       "width": 16,
       "height": 20,
@@ -690,6 +690,32 @@
       "description": "An apricot tree in full bloom.",
       "stock": 31,
       "sales": 7
+    },
+    {
+      "id": "51",
+      "title": "Nothing Phone 1",
+      "width": 300,
+      "height": 250,
+      "price": 499,
+      "thumbnail": "https://in.nothing.tech/cdn/shop/files/12Image_1280x1020_a11e1bb0-7ace-47b6-a8ad-ae34c33c5314_3840x.png?v=1658151576",
+      "image": "https://in.nothing.tech/cdn/shop/files/12Image_1280x1020_a11e1bb0-7ace-47b6-a8ad-ae34c33c5314_3840x.png?v=1658151576",
+      "description": "Nothing Phone (1) is Nothing's 1st Generation Phone with Glyph Interface",
+      "stock": 567,
+      "sales": 234,
+      "category_id": 11
+    },
+    {
+      "id": "52",
+      "category_id": 11,
+      "title": "Nothing Phone 3a",
+      "width": 300,
+      "height": 250,
+      "price": 452,
+      "thumbnail": "https://cdn.beebom.com/mobile/nothing-phone-3a-back-2.png",
+      "image": "https://cdn.beebom.com/mobile/nothing-phone-3a-back-2.png",
+      "description": "Nothing Phone 3a is Nothing's latest Device",
+      "stock": 234,
+      "sales": 123
     }
   ]
 }
