@@ -1,17 +1,29 @@
 import {
-  Datagrid,
+  DatagridConfigurable,
   List,
   NumberField,
   ReferenceField,
   TextField,
   ImageField,
   UrlField,
+  TopToolbar,
+  SelectColumnsButton,
+  CreateButton,
+  ExportButton,
 } from "react-admin";
 import PosterFilterList from "./PosterFilterList";
 
+const PosterListActions = () => (
+  <TopToolbar>
+    <SelectColumnsButton/>
+    <CreateButton/>
+    <ExportButton/>
+  </TopToolbar>
+)
+
 export const PosterList = () => (
-  <List aside={<PosterFilterList/>}>
-    <Datagrid>
+  <List aside={<PosterFilterList/>} actions={<PosterListActions/>}>
+    <DatagridConfigurable>
       <TextField source="id" />
       <ReferenceField source="category_id" reference="categories" />
       <TextField source="title" />
@@ -23,6 +35,6 @@ export const PosterList = () => (
       <TextField source="description" />
       <NumberField source="stock" />
       <NumberField source="sales" sx={{ fontWeight: "bold" }} emptyText="N/A" />
-    </Datagrid>
+    </DatagridConfigurable>
   </List>
 );
