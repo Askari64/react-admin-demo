@@ -7,9 +7,10 @@ import {
   ImageField,
   UrlField,
 } from "react-admin";
+import PosterFilterList from "./PosterFilterList";
 
 export const PosterList = () => (
-  <List>
+  <List aside={<PosterFilterList/>}>
     <Datagrid>
       <TextField source="id" />
       <ReferenceField source="category_id" reference="categories" />
