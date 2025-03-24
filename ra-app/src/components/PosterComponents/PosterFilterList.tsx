@@ -3,6 +3,7 @@ import {
   FilterListItem,
   FilterLiveSearch,
   useGetList,
+  Count,
 } from "react-admin";
 import { Card, CardContent } from "@mui/material";
 import CategoryIcon from "@mui/icons-material/LocalOffer";
@@ -26,6 +27,7 @@ function PosterFilterList() {
               value={{ category_id: category_data.id }}
             />
           ))}
+          <p>Total Records: {<Count/>}</p>
         </FilterList>
       </CardContent>
     </Card>
