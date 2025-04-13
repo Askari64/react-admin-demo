@@ -65,7 +65,7 @@
       "image": "https://marmelab.com/posters/animals-2.jpeg",
       "description": "A happy dog rolling on green grass.",
       "stock": 10,
-      "sales": 23
+      "sales": 24
     },
     {
       "id": 2,
@@ -716,6 +716,19 @@
       "description": "Nothing Phone 3a is Nothing's latest Device",
       "stock": 234,
       "sales": 123
+    },
+    {
+      "id": "5",
+      "category_id": 4,
+      "title": "Ferrari LaFerrari",
+      "width": 456,
+      "height": 567,
+      "price": 34567,
+      "thumbnail": "https://s1.cdn.autoevolution.com/images/gallery/FERRARILaFerrari-4797_10.jpg",
+      "image": "https://s1.cdn.autoevolution.com/images/gallery/FERRARILaFerrari-4797_10.jpg",
+      "description": "sxdfghnbgvf",
+      "stock": 765,
+      "sales": 67
     }
   ]
 }
