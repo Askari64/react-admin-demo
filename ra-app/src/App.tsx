@@ -11,6 +11,7 @@ import { CategoryEdit } from "./components/CategoryComponents/CategoryEdit";
 import { CategoryCreate } from "./components/CategoryComponents/CategoryCreate";
 import { PosterShow } from "./components/PosterComponents/PosterShow";
 import { CategoryShow } from "./components/CategoryComponents/CategoryShow";
+import Dashboard from "./components/Dashboard";
 
 const auth0 = new Auth0Client({
   domain: import.meta.env.VITE_AUTH0_DOMAIN,
@@ -21,7 +22,7 @@ const auth0 = new Auth0Client({
   },
 });
 
-export const authProvider = Auth0AuthProvider(auth0, {
+const authProvider = Auth0AuthProvider(auth0, {
   loginRedirectUri: import.meta.env.VITE_LOGIN_REDIRECT_URL,
 });
 
@@ -35,7 +36,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Admin dataProvider={dataProvider} authProvider={authProvider}>
+      <Admin dataProvider={dataProvider} authProvider={authProvider} dashboard={Dashboard}>
         <Resource
           name="posters"
           list={PosterList}
