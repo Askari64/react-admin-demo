@@ -36,7 +36,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Admin dataProvider={dataProvider} authProvider={authProvider} dashboard={Dashboard}>
+      <Admin requireAuth dataProvider={dataProvider} authProvider={authProvider} dashboard={Dashboard}>
         <Resource
           name="posters"
           list={PosterList}
